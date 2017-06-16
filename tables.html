@@ -2,33 +2,63 @@
 <html>
     <head>
         <title>Tables -- Hub AIrports</title>
+        <style>
+            table{
+                border: 2px solid blue;
+                border-collapse: collapse;
+                width: 500;
+            }
+            
+            tr, th, td
+            {
+                border: 1px solid blue;
+            }
+            
+            th
+            {
+                background-color: lightgray;
+            }
+            
+            .city
+            {
+                background-color: lightskyblue;
+            }
+            
+            .an
+            {
+                background-color: lightslategray;
+            }
+            
+            .airline
+            {
+                background-color: darkblue;
+                color: white;
+            }
+        </style>
     </head>
     <body>
-        <table border="1">
+        <table>
             <tr>
                 <th>City</th><th>Airport</th><th>Airline Hubs</th>
             </tr>
             <tr>
-                <td>New York</td><td>JFK</td><td>jetBlue</td>
+                <td class="city">New York</td><td class="an">JFK</td><td class="airline">jetBlue</td>
             </tr>
             <tr>
-                <td rowspan="2">Dallas</td><td>Dallas Love</td><td>Southwest</td>
+                <td rowspan="2" class="city">Dallas</td><td class="an">Dallas Love</td><td class="airline">Southwest</td>
             </tr>
             <tr>
-                <td>DFW</td><td>American</td>
+                <td class="an">DFW</td><td class="airline">American</td>
             </tr>
             <tr>
-                <td rowspan="2">Chicago</td><td rowspan="2">O'Hare</td><td>American </td>
+                <td rowspan="2" class="city">Chicago</td><td rowspan="2" class="an" >O'Hare</td><td class="airline">American </td>
             </tr>
             <tr>
-                <td>United</td>
+                <td class="airline">United</td>
             </tr>
             <tr>
-                <td colspan="2">Atlanta</td><td>Delta</td>
+                <td class="city">Atlanta</td><td class="an">Hartsfield-Jackson</td><td class="airline">Delta</td>
             </tr>
-        
         </table>
-    
     </body>
-
 </html>
